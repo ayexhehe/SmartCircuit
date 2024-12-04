@@ -1,0 +1,232 @@
+body {
+    background-color: #2D3E50; /* Dark, calming blue-gray */
+    color: #F5F5F5; /* Soft white for main text */
+}
+
+.title h1 {
+    text-align: center;
+    color: #476baa; /* Light blue for title */
+    margin: 0;
+    font-size: 30px; /* Adjust for desired title size */
+}
+
+.readings {
+    max-width: 400px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.readings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.readings th,
+.readings td {
+    border: 1px solid #4A6D80; /* Darker shade for table borders */
+    padding: 8px;
+}
+
+.readings td a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+.readings th {
+    background-color: #3A5466; /* Slightly lighter than the background */
+    color: #F5F5F5; /* White text for table headers */
+    font-weight: bold;
+}
+
+.readings td {
+    color: #D1D9E6; /* Soft grayish-blue for better readability */
+    text-align: center;
+}
+
+.readings tr:nth-child(even) {
+    background-color: #3A5466; /* Alternating row color */
+}
+
+.readings tr:hover {
+    background-color: #506A7A; /* Row hover effect */
+}
+
+.controls {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-switch,
+.sub-switches {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6C98C4; /* Calming blue for buttons */
+    color: #2D3E50; /* Darker text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4A7F9E; /* Slightly darker blue for hover */
+}
+
+.sub-switches {
+    display: flex;
+    gap: 15px;
+}
+
+.conversion-table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.conversion-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+}
+
+.conversion-table th,
+.conversion-table td {
+    border: 1px solid #4A6D80;
+    padding: 8px;
+    text-align: center;
+}
+
+.conversion-table th {
+    background-color: #3A5466;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+.conversion-table tr:nth-child(even) {
+    background-color: #3A5466;
+}
+
+.conversion-table tr:hover {
+    background-color: #506A7A;
+}
+
+.conversion-rate {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conversion-rate label {
+    font-size: 16px;
+    color: #A1C4FF; /* Light blue for labels */
+}
+
+.conversion-rate input {
+    padding: 5px;
+    font-size: 16px;
+    width: 80px;
+    border: 1px solid #4A6D80;
+    border-radius: 5px;
+    background-color: #506A7A;
+    color: #F5F5F5;
+}
+
+.conversion-rate button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #6C98C4;
+    color: #2D3E50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conversion-rate button:hover {
+    background-color: #4A7F9E;
+}
+
+.voltage{
+    top: 20px;
+    left: 125px;
+    position: relative;
+}
+.voltage h1{
+    color: #A1C4FF; /* Light blue for title */
+    margin: 0;
+    font-size: 25px;
+}
+
+.current{
+    top: 20px;
+    left: 125px;
+    position: relative;
+}
+.current h1{
+    color: #A1C4FF; /* Light blue for title */
+    margin: 0;
+    font-size: 25px;
+}
+
+.energy{
+    top: 20px;
+    left: 125px;
+    position: relative;
+}
+.energy h1{
+    color: #A1C4FF; /* Light blue for title */
+    margin: 0;
+    font-size: 25px;
+}
+
+.frequency{
+    top: 20px;
+    left: 125px;
+    position: relative;
+}
+.frequency h1{
+    color: #A1C4FF; /* Light blue for title */
+    margin: 0;
+    font-size: 25px;
+}
+.back-button {
+    position: fixed; /* Ensures the button stays in the same position relative to the viewport */
+    top: 10px;
+    left: 10px;
+    background-color: #4A7F9E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 9999; /* Places the button above all other layers */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.live-chart {
+    width: 80%;
+    height: 400px; /* Adjust height for chart */
+    background-color: #3A5466; /* Darker background for the chart area */
+    border: 2px solid #4A6D80;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 125px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
