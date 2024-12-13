@@ -133,19 +133,19 @@
                 const formattedValue = tempC !== null ? tempC.toFixed(2) : '0.00';
                 document.getElementById('temperature').innerHTML = formattedValue;
 
-                if (tempC >= 38) {
+                if (tempC >= 37) {
                     if (!alertTriggered) {
                         alertTriggered = true;
                         showAlert("Main Breaker Off, Temp Too High", tempC);
                         playSound();
                     }
-                } else if (tempC >= 36 && tempC < 38) {
+                } else if (tempC >= 35 && tempC < 37) {
                     if (!alertTriggered) {
                         alertTriggered = true;
                         showAlert(`Warning: Temperature Reached ${tempC}°C`, tempC);
                         
                     }
-                } else if (tempC < 36) {
+                } else if (tempC < 32) {
                     if (alertTriggered) {
                         alertTriggered = false;
                         removeAlert();
@@ -160,7 +160,7 @@
             alertBox.style.top = '20px';
             alertBox.style.right = '20px';
             alertBox.style.padding = '10px 20px';
-            alertBox.style.backgroundColor = temperature >= 38 ? 'red' : 'orange'; // Red for critical, orange for warning
+            alertBox.style.backgroundColor = temperature >= 37 ? 'red' : 'orange'; // Red for critical, orange for warning
             alertBox.style.color = 'white';
             alertBox.style.fontSize = '16px';
             alertBox.style.borderRadius = '5px';
