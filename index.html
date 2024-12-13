@@ -139,7 +139,7 @@
                         showAlert("Main Breaker Off, Temp Too High", tempC);
                         playSound();
                     }
-                } else if (tempC >= 29 && tempC < 38) {
+                } else if (tempC >= 36 && tempC < 38) {
                     if (!alertTriggered) {
                         alertTriggered = true;
                         showAlert(`Warning: Temperature Reached ${tempC}°C`, tempC);
